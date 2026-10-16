@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+    <h1>Currency Converter</h1>
+    <div class="upperBox">
+            <input value="" type="text" id="upperTextBox" placeholder="0.00" autocomplete="off"/>
+            <div class="dropdown">
+            <div class="upper">
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" />
+                        <select name="from" id="fromCurr">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <i class="fa-solid fa-right-left"></i>
+
+            <div class="lowerBox">
+            <input value="" type="text" id="lowerTextBox" placeholder="0.00" autocomplete="off"/>
+            <div class="dropdown">
+                <div class="lower">
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" />
+                        <select name="to" id="toCurr">
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

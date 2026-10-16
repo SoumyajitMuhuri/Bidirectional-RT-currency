@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: #f2f5f4;
+    color: #1f302e;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.container {
+    width: min(100%, 520px);
+    padding: 38px;
+    border: 1px solid #e5ece9;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 18px 50px rgb(30 57 51 / 8%);
+}
+
+h1 {
+    margin: 0 0 30px;
+    color: #203a36;
+    font-size: clamp(1.5rem, 4vw, 1.85rem);
+    font-weight: 650;
+    letter-spacing: -0.045em;
+}
+
+.upperBox,
+.lowerBox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin: 0;
+    padding: 13px;
+    border: 1px solid #e4ebe8;
+    border-radius: 14px;
+    background: #fbfcfc;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.upperBox:focus-within,
+.lowerBox:focus-within {
+    border-color: #6eaaa0;
+    box-shadow: 0 0 0 3px rgb(70 142 128 / 12%);
+}
+
+.container input {
+    min-width: 0;
+    width: 100%;
+    height: 44px;
+    margin: 0;
+    padding: 0 4px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #203a36;
+    font: inherit;
+    font-size: 1.25rem;
+    font-weight: 550;
+    letter-spacing: -0.025em;
+}
+
+.container input::placeholder {
+    color: #a0afab;
+    opacity: 1;
+}
+
+.dropdown,
+.upper,
+.lower,
+.select-container {
+    display: flex;
+    align-items: center;
+}
+
+.select-container {
+    min-height: 42px;
+    gap: 8px;
+    padding: 0 10px;
+    border: 1px solid #e5ece9;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.dropdown img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.select-container select {
+    max-width: 86px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #29443f;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 650;
+}
+
+.container > i {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    margin: 12px auto;
+    place-items: center;
+    transform: rotate(90deg);
+    border: 1px solid #e5ece9;
+    border-radius: 50%;
+    background: #fff;
+    color: #6b8e87;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    .container {
+        padding: 26px 20px;
+        border-radius: 17px;
+    }
+
+    h1 {
+        margin-bottom: 24px;
+    }
+
+    .upperBox,
+    .lowerBox {
+        gap: 6px;
+        padding: 9px;
+    }
+
+    .select-container {
+        gap: 5px;
+        padding: 0 7px;
+    }
+
+    .select-container select {
+        max-width: 72px;
+    }
+}
